@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="main.js"></script>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<title>Minha Página</title>
+</head>
+<body onload="load()">
+	<header class="titulo">
+		<h1>
+			Aprendendo JS
+		</h1>
+	</header>
+	<section>
+		<article>
+			<button type="button" onclick="clicou()">Click Here</button>
+			<p id="agradecimento" onclick="redirecionar()"></p>
+			<p id="mouseover" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+			<p id="mouseover" onmouseover="trocar()" onmouseout="voltar()">Passe o mouse aqui</p>
+		</article>
+		<select onchange="funcaoChange(this)">
+			<option value="1">Op 1</option>
+			<option value="humano">Op 2</option>
+			<option value="2">Op 3</option>
+		</select>
+	</section>
+</body>
+</html>
