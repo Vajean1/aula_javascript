@@ -1,0 +1,56 @@
+Introdução ao JavaScript
+
+Java script é:
+
+-Linguagem de script e multiplataforma
+-Client Side - É executado do lado do client (usuário)
+-Tem capacidade de interarir com elementos de uma página
+HTML
+-Muito usado no desenvolvimento de paginas e tambem mobile apps
+
+só é possível por causa do: DOM (Documento Object Model)
+Java script pode alterar todos os elemntos do HTML
+JavaScript pode alterar todos os atributos e estilos de CSS de uma página
+
+Modos de utilizar JS
+
+1 -para utilizar o JS, é preciso utilizar a tag <script> no body do html
+2 -Criar um arquivo main.js em javascript e no head do html usar a tag <script src=""> informando o diretorio do arquivo main.js
+------- Comandos JS ---------
+comentar = // para uma linha, /**/ para mais de uma linha
+concatenar = +
+alert = Exibe a string na tela do navegador
+variaveis = var nome da variavel = valor;
+console.log = leva para onde está o console, no navegador apertando f12. Para ver o que está acontecendo no programa
+.replace = para trocar o valor de uma variavel, adiciona junto ex: console.log(frase.replace("o atributo que quer mudar", "o que quer que seja colocado")
+array = varival = ["",""] etc. para exibir varivel[posição do valor na array], console.log(variavel da array), mostra o numero de item dentro da array.
+dicionário = variavel = {valor: atributo, valor: atributo}, para ver o valor não utiliza o nome, como na array, mas o atributo. console.log(variaveldic.valor). É possível fazer uma lista de dicionario variavel = [{valor: atri, valor:atri},{valor:atri, valor:atri}].
+condicional (if else) = if(condição){executar caso true}else{executa caso falso}
+prompt("") = dentro de uma váriavel pede o valor ao usuário
+while = repetição, while(condiçao){ação}
+for = for ( var variavel; condição; ação){console.log(variavel) exibir}
+push, pop e length = varivelarray.push(atributo) = adicionar atributo na array. variavelarray.pop(atributo); = retirar algum item da array. variavelarray.length
+reverse array = varivelarray.reverse() = mostrar os item de trás para frente, ao contrário. Dentro do console.log ou alert
+toString para array = variavelarray.toString() = transforma os item da array em string
+join para array = variavel.join() = transforma os item da array em string e adiciona o que quiser para separá-las.
+lowerCase, UpperCase = toUpperCase() botar todas em caixa alta. .toLowerCase() = para botar tudo em caixa baixa
+redirecionar para outra página =
+date = new Date(); dentro de uma var, usando o getMonth, getDay, getMinutes, getSeconds etc, na alert ou console.log, exibirá o dia, mes, minutos etc. Somente
+function = function nome(argumento){ retorno} para exibir só utilizar a função no alert ou cnsole, nome(argumento).
+variavel global / local = variavel global é que está expressa fora de uma function, variael local é uma dentro de uma function, se caso a function n achar a variavel no local ela busca no global.
+--------------------------------------
+Manipulando elementos de uma pagina
+
+onclick = criar um button em html e adicionar uma onclick="nome da função quando apertar o botão"
+document.getElementById(id de um h3 por exemplo).innerHTML = "String que quer que ele escreva onde está alocado esse id" Ou seja, após clicar no botão vendo que a function prediz isso ele irá escrever na página a string desejada.
+.innerHTML = injeta algo no corpo html
+window.open("url") = faz abrir uma nova aba após clicar em algum local, utilizando onclick etc
+window.location.href = "url" abre uma aba apos clicar, mas na mesma aba, caso esteja com o atributo onclick.
+onmouseover ="function em JS"= atributo em html para utilizar a função que fazer quando passar o mouse por cima.
+onmouseout = "function em JS" = para quando tirar o mouse de cima, mudar
+(OBS: dentro do onmouseover ou onmouseout, pode-se colocar um parametro dentro da funcao, para que se por acaso aparecer uma tag com id igual não aconteça por o script em ação
+ex: <p id="mousemove" onmouseover="trocar(paramtero-this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+neste caso, mesmo que apareça outra tag com a mesma id e o mesmo conteudo não irá executar o script, a não ser que eu queria.
+Lembrar de adicionar, u elemento na function em JS)
+onload="function" = quando carregar a página ele manda o que é pra executar a function
+onchange="function" = quando valor mudar de um select ele pega o value dele.
